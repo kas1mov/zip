@@ -1,0 +1,225 @@
+.buy {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: $whiteColor;
+  &__container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    padding-top: 176px;
+  }
+  &__back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Cabin";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $blackColor;
+  }
+  &__mask {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    z-index: 0;
+  }
+  &__grad {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &__data {
+    margin-top: 32px;
+  }
+}
+.data {
+  display: flex;
+  gap: 56px;
+  &__title {
+    font-family: "Cabin";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61.04px;
+    line-height: 74px;
+    color: $blackColor;
+  }
+  &__name {
+    font-family: "Cabin";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 38px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 8px 0;
+  }
+  &__reyting {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  &__sum {
+    font-family: "Cabin";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31.25px;
+    line-height: 38px;
+    color: $blackColor;
+    margin-top: 16px;
+  }
+  &__text {
+    font-family: "Cabin";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $blackColor;
+  }
+  &__tel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__btn {
+    font-family: "Cabin";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $whiteColor;
+    padding: 8px 24px;
+    background: #16abff;
+    border-radius: 14px;
+    margin-top: 16px;
+  }
+  &__text2 {
+    display: none;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 170px;
+    &__title {
+      font-family: "Cabin";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 31.25px;
+      line-height: 38px;
+      color: $blackColor;
+    }
+    &__text {
+      font-family: "Cabin";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: $blackColor;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .buy {
+    &__back {
+      font-family: "Cabin";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: $blackColor;
+    }
+
+    &__container {
+      width: 100%;
+      max-width: 326px;
+      margin: auto;
+      padding: 0 20px;
+      padding-top: 63px;
+    }
+    &__mask {
+      position: absolute;
+      right: 0;
+      top: 0px;
+      z-index: 0;
+      width: 400px;
+      height: 600px;
+    }
+    &__grad {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .data {
+    display: flex;
+    align-items: center;
+    &__img {
+      width: 262px;
+      height: 200px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      font-family: "Cabin";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+      color: $blackColor;
+    }
+    &__name {
+      display: none;
+    }
+    &__sum {
+      font-family: "Cabin";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #585858;
+      margin: 19px 0;
+    }
+    &__text {
+      display: none;
+    }
+    &__text2 {
+      display: inline;
+      font-family: "Cabin";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: $blackColor;
+      margin-bottom: 92px;
+    }
+    &__reyting {
+      display: none;
+    }
+    &__btn {
+      font-family: "Cabin";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: $whiteColor;
+      padding: 8px 24px;
+      margin: 0;
+    }
+    &__desc {
+      display: none;
+    }
+  }
+}

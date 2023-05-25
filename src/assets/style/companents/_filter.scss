@@ -1,0 +1,105 @@
+.filter {
+  margin-top: 379px;
+  &__search {
+    &__input {
+      background: rgba(255, 255, 255, 0.91);
+      box-shadow: 5px 5px 20px rgba(181, 181, 181, 0.2);
+      border-radius: 53px;
+      width: 100%;
+      font-family: "Almarai";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 27px;
+      color: $blackColor;
+      padding: 40px 0;
+      padding-left: 50px;
+    }
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 31.6px;
+    justify-content: center;
+    margin-top: 91px;
+    &__item {
+      background: rgba(255, 255, 255, 0.91);
+      box-shadow: 5px 5px 20px rgba(181, 181, 181, 0.2);
+      border-radius: 53px;
+      font-family: "Almarai";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 27px;
+      color: $blackColor;
+      padding: 16px 50px;
+    }
+    &__item:hover {
+      animation: bounce 1s;
+    }
+    &__btn {
+      font-family: "Almarai";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 27px;
+      text-decoration-line: underline;
+      background: inherit;
+      color: $blackColor;
+    }
+  }
+}
+
+@keyframes bounce {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .filter {
+    margin-top: 139px;
+    &__search {
+      &__input {
+        background: #ffffff;
+        border: 1px solid #000000;
+        box-shadow: 5px 5px 20px rgba(181, 181, 181, 0.2);
+        border-radius: 53px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 152.7%;
+        color: $blackColor;
+        padding: 11px 0;
+        padding-left: 15px;
+      }
+    }
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: center;
+      margin-top: 15px;
+      flex-wrap: wrap;
+      &__item {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 10px;
+        color: $blackColor;
+        padding: 8px 20px;
+      }
+      &__btn {
+        font-family: "Almarai";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9px;
+        line-height: 10px;
+        color: $blackColor;
+        text-decoration-line: underline;
+        background: inherit;
+      }
+    }
+  }
+}
